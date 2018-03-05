@@ -10,19 +10,32 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@drawable/new_login_gradients"
     tools:context="com.example.birat.major_project.MainActivity">
 
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ege"/>
 
     <Button
-        android:text="Button"
+        android:text="Get Started"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_gravity="center"/>
+        android:id="@+id/button1"
+        android:layout_gravity="center"
+        android:background="@drawable/background_signup"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:padding="16dp"/>
 
-    <ImageView
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal"/>
+
 </LinearLayout>

@@ -11,28 +11,30 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.File;
-import java.net.URI;
 
-public class MainActivity extends AppCompatActivity {
-    public Button button1;
+public class Main2Activity extends AppCompatActivity {
+
+    public Button button;
 
     public void init(){
-        button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(toy);
+                Intent doi = new Intent(Main2Activity.this,Analyse.class);
+                startActivity(doi);
             }
         });
 
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         init();
+
     }
+
+
 }
