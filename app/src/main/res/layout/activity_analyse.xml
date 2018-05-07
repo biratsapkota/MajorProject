@@ -9,13 +9,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@drawable/new_login_gradients"
     tools:context="com.example.birat.major_project.Analyse">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:text="Analyse"/>
+        android:text="Analyse"
+        android:background="@drawable/background_login"
+        android:textColor="#f16f7d"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:clickable="true"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
 
     <ImageView
         android:layout_width="350dp"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main2"
     android:layout_width="match_parent"
@@ -8,10 +9,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@drawable/new_login_gradients"
     tools:context="com.example.birat.major_project.Main2Activity">
 
+
+    <ImageButton
+        android:layout_width="196dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/angry"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton3"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignEnd="@+id/imageButton" />
 
     <Button
         android:text="Analyse Mood"
@@ -19,8 +29,55 @@
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/background_signup"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
 
+    <ImageButton
+        android:layout_width="140dp"
+        android:layout_height="161dp"
+        android:foregroundGravity="right"
+        app:srcCompat="@drawable/sad"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:scaleType="fitCenter"/>
 
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/hapyy"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/imageButton3"
+        android:scaleType="fitCenter"
+        android:layout_alignParentStart="true" />
 
-</LinearLayout>
+    <TextView
+        android:text="Recognizes your mood from the picture you click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="140dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/love"
+        android:id="@+id/imageButton2"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

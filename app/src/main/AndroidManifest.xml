@@ -12,15 +12,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Analyse"></activity>
+        <activity android:name=".Analyse" />
+        <activity android:name=".happy" />
+        <activity android:name=".love" />
+        <activity android:name=".angry" />
+        <activity android:name=".sad" />
+        <activity android:name=".profile" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup"></activity>
     </application>
 
 </manifest>
