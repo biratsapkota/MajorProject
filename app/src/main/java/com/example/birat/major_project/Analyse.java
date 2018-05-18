@@ -13,9 +13,9 @@ import android.widget.ImageView;
 import java.io.File;
 
 public class Analyse extends AppCompatActivity {
-    Button button3;
-    ImageView imageView;
-    static final int CAM_REQUEST = 1;
+    public Button button3;
+    public ImageView imageView;
+    public static final int CAM_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

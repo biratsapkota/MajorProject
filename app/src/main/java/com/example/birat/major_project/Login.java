@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     public Button login;
@@ -17,7 +19,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        login = (Button)  findViewById(R.id.login);
+        login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,19 +31,20 @@ public class Login extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opensignup();
+                openSignup();
             }
         });
+
     }
 
     public void openActivity(){
-        Intent i = new Intent(this,MainActivity.class);
-        startActivity(i);
+        Intent il = new Intent(this,MainActivity.class);
+        startActivity(il);
     }
 
-    public void opensignup(){
+    public void openSignup(){
         Intent is = new Intent(this,Signup.class);
         startActivity(is);
-
     }
+
 }
